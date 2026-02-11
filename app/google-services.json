@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "824883484110",
+    "project_id": "emak-cloudphone",
+    "storage_bucket": "emak-cloudphone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824883484110:android:f074ced51b816d8458079f",
+        "android_client_info": {
+          "package_name": "com.emak.cloudphone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2nJXfGEPZDwcSMHIYmdCaPdCmsVSVxjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

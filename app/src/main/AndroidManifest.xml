@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
         android:allowBackup="true"
@@ -14,11 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EmakCloudPhone"
         tools:targetApi="31">
-        <activity
-            android:name=".WebView"
-            android:exported="false"
-            android:label="@string/title_activity_web_view"
-            android:theme="@style/Theme.EmakCloudPhone" />
+        <service
+            android:name=".emakFireBaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
